@@ -1,0 +1,162 @@
+[
+  {
+    "shift_id": "SHF-2024-001",
+    "driver_id": "EMP-1001",
+    "tram_id": "TRAM-001",
+    "route_id": "route_1",
+    "start_time": "2024-11-18T05:30:00",
+    "end_time": "2024-11-18T13:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-002",
+    "driver_id": "EMP-1002",
+    "tram_id": "TRAM-002",
+    "route_id": "route_2",
+    "start_time": "2024-11-18T05:30:00",
+    "end_time": "2024-11-18T14:00:00"
+  },
+  {
+    "shift_id": "SHF-2024-003",
+    "driver_id": "EMP-1006",
+    "tram_id": "TRAM-011",
+    "route_id": "route_3",
+    "start_time": "2024-11-18T05:45:00",
+    "end_time": "2024-11-18T13:45:00"
+  },
+  {
+    "shift_id": "SHF-2024-004",
+    "driver_id": "EMP-1005",
+    "tram_id": "TRAM-021",
+    "route_id": "route_4",
+    "start_time": "2024-11-18T06:00:00",
+    "end_time": "2024-11-18T14:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-005",
+    "driver_id": "EMP-1008",
+    "tram_id": "TRAM-004",
+    "route_id": "route_1",
+    "start_time": "2024-11-18T13:00:00",
+    "end_time": "2024-11-18T21:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-006",
+    "driver_id": "EMP-1009",
+    "tram_id": "TRAM-012",
+    "route_id": "route_2",
+    "start_time": "2024-11-18T13:30:00",
+    "end_time": "2024-11-18T22:00:00"
+  },
+  {
+    "shift_id": "SHF-2024-007",
+    "driver_id": "EMP-1015",
+    "tram_id": "TRAM-014",
+    "route_id": "route_3",
+    "start_time": "2024-11-18T13:30:00",
+    "end_time": "2024-11-18T21:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-008",
+    "driver_id": "EMP-1017",
+    "tram_id": "TRAM-022",
+    "route_id": "route_4",
+    "start_time": "2024-11-18T14:00:00",
+    "end_time": "2024-11-18T22:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-009",
+    "driver_id": "EMP-1011",
+    "tram_id": "TRAM-005",
+    "route_id": "route_1",
+    "start_time": "2024-11-19T05:30:00",
+    "end_time": "2024-11-19T13:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-010",
+    "driver_id": "EMP-1018",
+    "tram_id": "TRAM-015",
+    "route_id": "route_2",
+    "start_time": "2024-11-19T05:30:00",
+    "end_time": "2024-11-19T14:00:00"
+  },
+  {
+    "shift_id": "SHF-2024-011",
+    "driver_id": "EMP-1010",
+    "tram_id": "TRAM-016",
+    "route_id": "route_3",
+    "start_time": "2024-11-19T05:45:00",
+    "end_time": "2024-11-19T14:00:00"
+  },
+  {
+    "shift_id": "SHF-2024-012",
+    "driver_id": "EMP-1007",
+    "tram_id": "TRAM-023",
+    "route_id": "route_4",
+    "start_time": "2024-11-19T06:00:00",
+    "end_time": "2024-11-19T14:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-013",
+    "driver_id": "EMP-1013",
+    "tram_id": "TRAM-002",
+    "route_id": "route_1",
+    "start_time": "2024-11-19T13:00:00",
+    "end_time": "2024-11-19T21:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-014",
+    "driver_id": "EMP-1012",
+    "tram_id": "TRAM-011",
+    "route_id": "route_2",
+    "start_time": "2024-11-19T13:30:00",
+    "end_time": "2024-11-19T22:00:00"
+  },
+  {
+    "shift_id": "SHF-2024-015",
+    "driver_id": "EMP-1020",
+    "tram_id": "TRAM-014",
+    "route_id": "route_3",
+    "start_time": "2024-11-19T13:30:00",
+    "end_time": "2024-11-19T21:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-016",
+    "driver_id": "EMP-1014",
+    "tram_id": "TRAM-025",
+    "route_id": "route_4",
+    "start_time": "2024-11-19T14:00:00",
+    "end_time": "2024-11-19T22:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-017",
+    "driver_id": "EMP-1003",
+    "tram_id": "TRAM-031",
+    "route_id": "route_3",
+    "start_time": "2024-11-20T05:30:00",
+    "end_time": "2024-11-20T13:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-018",
+    "driver_id": "EMP-1004",
+    "tram_id": "TRAM-001",
+    "route_id": "route_1",
+    "start_time": "2024-11-20T06:00:00",
+    "end_time": "2024-11-20T14:00:00"
+  },
+  {
+    "shift_id": "SHF-2024-019",
+    "driver_id": "EMP-1016",
+    "tram_id": "TRAM-012",
+    "route_id": "route_3",
+    "start_time": "2024-11-20T13:30:00",
+    "end_time": "2024-11-20T21:30:00"
+  },
+  {
+    "shift_id": "SHF-2024-020",
+    "driver_id": "EMP-1019",
+    "tram_id": "TRAM-022",
+    "route_id": "route_4",
+    "start_time": "2024-11-20T14:00:00",
+    "end_time": "2024-11-20T22:30:00"
+  }
+]

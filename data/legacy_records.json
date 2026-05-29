@@ -1,0 +1,104 @@
+{
+  "_comment": "Suki exported this from the legacy operations spreadsheets. It contains records that have been carried over from years of inconsistent data entry. Loading it into the new system without validation will cause problems. The validation rules added in Task 6 should reject the bad records loudly.",
+  "trams": [
+    {
+      "tram_id": "TRAM-LEG-001",
+      "model": "Bombardier Flexity",
+      "capacity": 200,
+      "status": "in_service"
+    },
+    {
+      "tram_id": "TRAM-LEG-002",
+      "model": "Siemens Avenio",
+      "capacity": 0,
+      "status": "retired"
+    },
+    {
+      "tram_id": "TRAM-LEG-003",
+      "model": "CAF Urbos",
+      "capacity": -45,
+      "status": "in_service"
+    },
+    {
+      "tram_id": "TRAM-LEG-004",
+      "model": "Stadler Tango",
+      "capacity": 180,
+      "status": "in_service"
+    },
+    {
+      "tram_id": "TRAM-LEG-005",
+      "model": "Bombardier Flexity",
+      "capacity": 0,
+      "status": "maintenance"
+    }
+  ],
+  "drivers": [
+    {
+      "employee_id": "EMP-LEG-901",
+      "name": "Geraldine Hatherway",
+      "qualified_routes": ["route_1", "route_2"],
+      "years_experience": 28
+    },
+    {
+      "employee_id": "EMP-LEG-902",
+      "name": "Cornelius Aboagye",
+      "qualified_routes": ["route_3"],
+      "years_experience": -3
+    },
+    {
+      "employee_id": "EMP-LEG-903",
+      "name": "Mireille Bouchard",
+      "qualified_routes": ["route_2", "route_4"],
+      "years_experience": 11
+    },
+    {
+      "employee_id": "EMP-LEG-904",
+      "name": "Stanislav Vukovic",
+      "qualified_routes": [],
+      "years_experience": -1
+    },
+    {
+      "employee_id": "EMP-LEG-905",
+      "name": "Theodora Pemberton",
+      "qualified_routes": ["route_1", "route_3", "route_4"],
+      "years_experience": 24
+    }
+  ],
+  "shifts": [
+    {
+      "shift_id": "SHF-LEG-501",
+      "driver_id": "EMP-LEG-901",
+      "tram_id": "TRAM-LEG-001",
+      "start_time": "2019-03-14T05:30:00",
+      "end_time": "2019-03-14T13:30:00"
+    },
+    {
+      "shift_id": "SHF-LEG-502",
+      "driver_id": "EMP-LEG-903",
+      "tram_id": "TRAM-LEG-004",
+      "start_time": "2019-03-14T14:00:00",
+      "end_time": "2019-03-14T11:00:00"
+    },
+    {
+      "shift_id": "SHF-LEG-503",
+      "driver_id": "EMP-LEG-905",
+      "tram_id": "TRAM-LEG-001",
+      "start_time": "2019-03-15T05:30:00",
+      "end_time": "2019-03-15T13:30:00"
+    },
+    {
+      "shift_id": "SHF-LEG-504",
+      "driver_id": "EMP-LEG-901",
+      "tram_id": "TRAM-LEG-004",
+      "start_time": "2019-03-15T22:00:00",
+      "end_time": "2019-03-15T06:00:00"
+    },
+    {
+      "shift_id": "SHF-LEG-505",
+      "driver_id": "EMP-LEG-903",
+      "tram_id": "TRAM-LEG-001",
+      "start_time": "2019-03-16T13:30:00",
+      "end_time": "2019-03-16T21:30:00"
+    }
+  ]
+}

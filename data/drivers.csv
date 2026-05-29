@@ -1,0 +1,21 @@
+employee_id,name,qualified_routes,years_experience
+EMP-1001,Marcus Whitfield,"route_1;route_2",12
+EMP-1002,Jennifer Asare,"route_1;route_2;route_3",18
+EMP-1003,Aroon Patel,"route_3;route_4",7
+EMP-1004,Karolina Nowak,"route_1;route_3",4
+EMP-1005,Daniel Okonkwo,"route_2;route_4",15
+EMP-1006,Siobhan Murphy,"route_1;route_2;route_3;route_4",22
+EMP-1007,Yusuf Demir,"route_4",3
+EMP-1008,Helena Reyes,"route_1;route_2",9
+EMP-1009,Tomasz Kowalczyk,"route_2;route_3",11
+EMP-1010,Priya Iyer,"route_3;route_4",6
+EMP-1011,James Connolly,"route_1",2
+EMP-1012,Beatrice Lindqvist,"route_2;route_3;route_4",14
+EMP-1013,Femi Adeyinka,"route_1;route_4",8
+EMP-1014,Eleanor Crawford,"route_2;route_4",16
+EMP-1015,Hiroshi Tanaka,"route_1;route_3",10
+EMP-1016,Naomi Levi,"route_3",5
+EMP-1017,Rashid Al-Mansouri,"route_1;route_2;route_4",13
+EMP-1018,Catarina Silva,"route_2;route_3",6
+EMP-1019,Andrei Popescu,"route_4",1
+EMP-1020,Mei Lin Chen,"route_1;route_2;route_3",19

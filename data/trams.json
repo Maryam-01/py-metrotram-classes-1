@@ -1,0 +1,122 @@
+[
+  {
+    "tram_id": "TRAM-001",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-002",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-003",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "maintenance"
+  },
+  {
+    "tram_id": "TRAM-004",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-005",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-011",
+    "model": "Siemens Avenio",
+    "capacity": 240,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-012",
+    "model": "Siemens Avenio",
+    "capacity": 240,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-013",
+    "model": "Siemens Avenio",
+    "capacity": 240,
+    "status": "maintenance"
+  },
+  {
+    "tram_id": "TRAM-014",
+    "model": "Siemens Avenio",
+    "capacity": 240,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-015",
+    "model": "Siemens Avenio",
+    "capacity": 240,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-016",
+    "model": "Siemens Avenio",
+    "capacity": 240,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-021",
+    "model": "CAF Urbos",
+    "capacity": 220,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-022",
+    "model": "CAF Urbos",
+    "capacity": 220,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-023",
+    "model": "CAF Urbos",
+    "capacity": 220,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-024",
+    "model": "CAF Urbos",
+    "capacity": 220,
+    "status": "maintenance"
+  },
+  {
+    "tram_id": "TRAM-025",
+    "model": "CAF Urbos",
+    "capacity": 220,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-031",
+    "model": "Stadler Tango",
+    "capacity": 180,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-032",
+    "model": "Stadler Tango",
+    "capacity": 180,
+    "status": "in_service"
+  },
+  {
+    "tram_id": "TRAM-033",
+    "model": "Stadler Tango",
+    "capacity": 180,
+    "status": "retired"
+  },
+  {
+    "tram_id": "TRAM-034",
+    "model": "Stadler Tango",
+    "capacity": 180,
+    "status": "retired"
+  }
+]
