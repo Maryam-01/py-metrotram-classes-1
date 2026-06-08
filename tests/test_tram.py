@@ -1,6 +1,9 @@
 import pytest
 from src.tram import Tram
 
+
+@pytest.fixture
+
 def test_tram_returns_summary():
     tram = Tram("TRAM-001", "Bombardier Flexity", 200, "in_service")
     assert tram.summary() == {
@@ -10,7 +13,8 @@ def test_tram_returns_summary():
             "status": "in_service"
     }
 
-# A new tram exposes its tram_id, model, capacity, and status correctly
+
+
 # A newly created tram defaults to "in_service" if no status is provided
 # send_for_maintenance() changes the status to "maintenance"
 # return_to_service() changes the status to "in_service"
@@ -51,8 +55,20 @@ def test_tram_retired():
 
 def test_tram_in_service():
     tram = Tram("TRAM-001", "Bombardier Flexity", 200, "retired")
-    # act
     expected = "in_service"
+    # act
     tram.return_to_service()
     # assert
     assert tram.status == expected
+
+def test_is_available_returns_true():
+    # Arrange
+    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "in_service")
+    # Act / Assert
+    assert tram.is_available() == True
+
+def test_is_available_returns_false():
+    # Arrange
+    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "retired")
+    # Act / Assert
+    assert tram.is_available() == False

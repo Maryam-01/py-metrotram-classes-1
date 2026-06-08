@@ -23,6 +23,11 @@ class Tram:
 
     def return_to_service(self):
         self.status = "in_service"
+
+    def is_available(self):
+        return self.status == "in_service"
+
+
     
 
 # send_for_maintenance(): changes the tram's status to "maintenance"
