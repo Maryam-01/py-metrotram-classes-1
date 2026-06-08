@@ -1,11 +1,11 @@
 
 
 class Tram:
-    def __init__(self, tram_id, model, capacity, status):
+    def __init__(self, tram_id, model, capacity, status="in_service"):
         self.tram_id = tram_id
         self.model = model
         self.capacity = capacity
-        self.status = status or "in_service"
+        self.status = status
     
     def summary(self):
         return {
@@ -29,8 +29,3 @@ class Tram:
 
 
     
-
-# send_for_maintenance(): changes the tram's status to "maintenance"
-# return_to_service(): changes the tram's status to "in_service"
-# retire(): changes the tram's status to "retired"
-# is_available(): returns True if the tram is in service, otherwise False

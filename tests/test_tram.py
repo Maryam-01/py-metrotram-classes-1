@@ -3,10 +3,12 @@ from src.tram import Tram
 
 
 @pytest.fixture
+def default_tram():
+    return Tram("TRAM-001", "Bombardier Flexity", 200)
 
-def test_tram_returns_summary():
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "in_service")
-    assert tram.summary() == {
+
+def test_tram_returns_summary(default_tram):
+    assert default_tram.summary() == {
             "tram_id": "TRAM-001",
             "model": "Bombardier Flexity",
             "capacity": 200,
@@ -14,17 +16,8 @@ def test_tram_returns_summary():
     }
 
 
-
-# A newly created tram defaults to "in_service" if no status is provided
-# send_for_maintenance() changes the status to "maintenance"
-# return_to_service() changes the status to "in_service"
-# retire() changes the status to "retired"
-# is_available() returns True when in service
-# is_available() returns False after maintenance
-
-def test_tram_returns_in_service():
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "")
-    assert tram.summary() == {
+def test_tram_returns_in_service(default_tram):
+    assert default_tram.summary() == {
             "tram_id": "TRAM-001",
             "model": "Bombardier Flexity",
             "capacity": 200,
@@ -32,11 +25,10 @@ def test_tram_returns_in_service():
     }
 
 
-def test_tram_changes_to_maintenance():
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "in_service")
-    tram.send_for_maintenance()
+def test_tram_changes_to_maintenance(default_tram):
+    default_tram.send_for_maintenance()
            
-    assert tram.summary() == {
+    assert default_tram.summary() == {
             "tram_id": "TRAM-001",
             "model": "Bombardier Flexity",
             "capacity": 200,
@@ -44,31 +36,28 @@ def test_tram_changes_to_maintenance():
     }
 
 
-def test_tram_retired():
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "in_service")
-    # act
+def test_tram_retired(default_tram):
     expected = "retired"
-    tram.retire()
+    # act
+    default_tram.retire()
     # assert
-    assert tram.status == expected
+    assert default_tram.status == expected
 
 
-def test_tram_in_service():
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "retired")
+def test_tram_in_service(default_tram):
     expected = "in_service"
     # act
-    tram.return_to_service()
+    default_tram.return_to_service()
     # assert
-    assert tram.status == expected
+    assert default_tram.status == expected
 
-def test_is_available_returns_true():
-    # Arrange
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "in_service")
+def test_is_available_returns_true(default_tram):
     # Act / Assert
-    assert tram.is_available() == True
+    assert default_tram.is_available() == True
 
-def test_is_available_returns_false():
-    # Arrange
-    tram = Tram("TRAM-001", "Bombardier Flexity", 200, "retired")
-    # Act / Assert
-    assert tram.is_available() == False
+def test_is_available_returns_false(default_tram):
+    # Act
+    default_tram.retire()
+    # Assert
+    assert default_tram.is_available() == False
+
