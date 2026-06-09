@@ -1,5 +1,5 @@
 import pytest
-from src.shift import Shift
+from src.shift import Shift, FleetError, InvalidShiftError
 
 @pytest.fixture
 def default_shift():
@@ -12,9 +12,6 @@ def default_shift():
     )
 
 
-
-
-
 def test_returns_length_of_shift_as_float(default_shift):
     expected = 8.0
     
@@ -24,3 +21,12 @@ def test_returns_length_of_shift_as_float(default_shift):
 def test_returns_attributes(default_shift):
     assert default_shift.shift_id == "SHF-2024-001"
     
+def test_shift_raises_error_when_endtime_before_starttime(): 
+    with pytest.raises(InvalidShiftError):
+        shift = Shift("SHF-2024-001",
+        "EMP-1001",
+        "TRAM-001",
+        "route_1",
+        "2024-11-18T14:30:00",
+        "2024-11-18T13:30:00"
+        )

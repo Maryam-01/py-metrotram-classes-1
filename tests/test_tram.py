@@ -1,5 +1,5 @@
 import pytest
-from src.tram import Tram
+from src.tram import Tram, FleetError, InvalidTramError
 
 
 @pytest.fixture
@@ -23,7 +23,6 @@ def test_tram_returns_in_service(default_tram):
             "capacity": 200,
             "status": "in_service"
     }
-
 
 def test_tram_changes_to_maintenance(default_tram):
     default_tram.send_for_maintenance()
@@ -60,4 +59,12 @@ def test_is_available_returns_false(default_tram):
     default_tram.retire()
     # Assert
     assert default_tram.is_available() == False
+
+def test_tram_capacity_raises_error_if_negative(): 
+    with pytest.raises(InvalidTramError):
+        tram = Tram("TRAM-001", "Bombardier Flexity", -200, "in_service")
+
+def test_tram_capacity_raises_error_if_zero(): 
+    with pytest.raises(InvalidTramError):
+        tram = Tram("TRAM-001", "Bombardier Flexity", 0, "in_service")
 

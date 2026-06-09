@@ -1,4 +1,8 @@
+class FleetError(Exception):
+    """Base exception for the Metro Tram fleet system."""
 
+class InvalidTramError(FleetError):
+    """Raised when a tram is constructed or modified with invalid data."""
 
 class Tram:
     def __init__(self, tram_id, model, capacity, status="in_service"):
@@ -14,6 +18,17 @@ class Tram:
             "capacity": self.capacity,
             "status": self.status
         }
+
+    @property
+    def capacity(self):
+        return self._capacity
+
+    @capacity.setter
+    def capacity(self, value):
+        if isinstance(value, int) and value > 0:
+            self._capacity = value
+        else:
+            raise InvalidTramError(f"capacity must be an integer greater than 0, got {value}")
 
     def send_for_maintenance(self):
         self.status = "maintenance"

@@ -1,4 +1,4 @@
-from src.driver import Driver
+from src.driver import Driver, FleetError, InvalidDriverError
 import pytest
 
 @pytest.fixture
@@ -18,3 +18,8 @@ def test_add_qualification_adds_new_route(default_driver):
 def test_add_qualification_doesnt_add_duplicates(default_driver):
     default_driver.add_qualification("route_3")
     assert default_driver.qualified_routes == ["route_1","route_2","route_3"]
+
+def test_driver_years_experience_raises_error_if_negative(): 
+    with pytest.raises(InvalidDriverError):
+        driver = Driver("EMP-1002","Jennifer Asare",["route_1","route_2","route_3"], -10)
+
