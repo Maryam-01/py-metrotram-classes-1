@@ -1,3 +1,5 @@
+import json
+
 class FleetError(Exception):
     """Base exception for the Metro Tram fleet system."""
 
@@ -29,6 +31,27 @@ class Tram:
             self._capacity = value
         else:
             raise InvalidTramError(f"capacity must be an integer greater than 0, got {value}")
+
+    
+    @classmethod
+    def from_json(cls, data):
+   
+        try:
+            capacity = int(data["capacity"])
+        
+        except (KeyError, TypeError, ValueError) as e:
+            raise InvalidTramError(f"Could not parse capacity from {data!r}") from e
+        return cls(
+            tram_id = data["tram_id"],
+            model = data["model"],
+            capacity = data["capacity"],
+            status = data["status"]
+
+        )
+        
+
+
+
 
     def send_for_maintenance(self):
         self.status = "maintenance"

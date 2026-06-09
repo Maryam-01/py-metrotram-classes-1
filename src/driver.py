@@ -32,3 +32,25 @@ class Driver:
         if route_id not in self.qualified_routes:
             self.qualified_routes.append(route_id)
 
+    
+
+    @classmethod
+    def from_csv_row(cls, row):
+        data = row.split(",")
+        
+        employee_id = data[0]
+        name = data[1]
+        qualified_routes = data[2].split(";")
+        years_experience = int(data[3])
+        
+
+        
+   
+
+        return cls(name, employee_id, qualified_routes, years_experience)
+
+        
+
+
+
+

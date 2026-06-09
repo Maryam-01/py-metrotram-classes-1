@@ -23,3 +23,25 @@ def test_driver_years_experience_raises_error_if_negative():
     with pytest.raises(InvalidDriverError):
         driver = Driver("EMP-1002","Jennifer Asare",["route_1","route_2","route_3"], -10)
 
+        
+def test_driver_converts_csv_returns_years_experience():
+    driver = Driver.from_csv_row("EMP-1001,Marcus Whitfield,route_1;route_2,12")
+        
+    assert driver.years_experience == 12
+
+def test_driver_returns_driver_name():
+    driver = Driver.from_csv_row("EMP-1001,Marcus Whitfield,route_1;route_2,12")
+        
+    assert driver.name == "Marcus Whitfield"
+
+def test_driver_id_returns_driver_id():
+    driver = Driver.from_csv_row("EMP-1001,Marcus Whitfield,route_1;route_2,12")
+        
+    assert driver.employee_id == "EMP-1001"
+
+def test_driver_qualified_routes_returns_qualified_routes():
+    driver = Driver.from_csv_row("EMP-1001,Marcus Whitfield,route_1;route_2,12")
+        
+    assert driver.qualified_routes == ["route_1", "route_2"]
+
+    

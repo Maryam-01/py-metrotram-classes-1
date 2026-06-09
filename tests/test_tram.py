@@ -1,4 +1,5 @@
 import pytest
+import json
 from src.tram import Tram, FleetError, InvalidTramError
 
 
@@ -67,4 +68,26 @@ def test_tram_capacity_raises_error_if_negative():
 def test_tram_capacity_raises_error_if_zero(): 
     with pytest.raises(InvalidTramError):
         tram = Tram("TRAM-001", "Bombardier Flexity", 0, "in_service")
+
+def test_from_json_returns_tram_id():
+    tram = Tram.from_json( {
+    "tram_id": "TRAM-001",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "in_service"
+  })
+    
+    assert tram.tram_id == "TRAM-001"
+
+def test_from_json_returns_capacity():
+    tram = Tram.from_json( {
+    "tram_id": "TRAM-001",
+    "model": "Bombardier Flexity",
+    "capacity": 200,
+    "status": "in_service"
+  })
+    
+    assert tram.capacity == 200
+
+
 
